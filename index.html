@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portuguese anti-sue filter</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="root">
+  <h1 class="title">{{ title }}</h1>
+  <form>
+    <div class="textareaWrapper">
+      <textarea placeholder="O teu texto para traduzir aqui" class="text input" v-model="inputText"></textarea>
+      <button class="translate" v-on:click="getWord">Traduzir</button>
+    </div>
+    <div class="textareaWrapper">
+      <textarea placeholder="Aqui irás ver a tua tradução" class="text output">{{ outputText }}</textarea>
+    </div>
+  </form>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
